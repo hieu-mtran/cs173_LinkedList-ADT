@@ -26,18 +26,18 @@ private:
 	Node	*head;		// the pointer for the linked list
 	
 public:
-			List		( void );							// done
-			List		( const List<T> &mylist );			// done
-		   ~List		( void );							// done
+		List		( void );					// done
+		List		( const List<T> &mylist );			// done
+		~List		( void );					// done
 List<T>		operator=	( const List<T> &mylist );			// done
-void		append		( const T &item	);					// done
-T &			operator[]	( int index );						// done
-void		insert		( const T &item, int index );		// done
-void		remove		( int index );						// done
-List<T>		operator+	( const List<T> &mylist ) const;	// done
-int			length		( void ) const;						// done
-bool		isEmpty		( void ) const;						// done
-void		clear		( void );							// done
+void		append		( const T &item	);				// done
+T &		operator[]	( int index );					// done
+void		insert		( const T &item, int index );			// done
+void		remove		( int index );					// done
+List<T>		operator+	( const List<T> &mylist ) const;		// done
+int			length		( void ) const;				// done
+bool		isEmpty		( void ) const;					// done
+void		clear		( void );					// done
 
 friend ostream & operator<< ( ostream &os, List<T> &mylist )
 {
